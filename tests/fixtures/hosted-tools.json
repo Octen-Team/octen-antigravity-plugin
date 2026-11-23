@@ -1,0 +1,16 @@
+{
+  "source": "tools/list on https://mcp.octen.ai/mcp (octen-mcp 0.8.0), 2026-11-23",
+  "tools": [
+    "search",
+    "news_search",
+    "business_search",
+    "place_search",
+    "pulse_search",
+    "broad_search",
+    "premier_search",
+    "extract",
+    "image_search",
+    "design_search",
+    "video_search"
+  ]
+}

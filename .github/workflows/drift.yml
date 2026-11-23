@@ -1,0 +1,22 @@
+name: Drift
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Compares the pinned plugin schema and hosted tool list with the live ones, and checks the links.
+      - run: python tests/check_drift.py
+        env:
+          OCTEN_API_KEY: ${{ secrets.OCTEN_API_KEY }}
