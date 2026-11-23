@@ -1,0 +1,21 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "octen",
+  "displayName": "Octen",
+  "version": "0.1.0",
+  "description": "Live web search for agents: web and news search, company and people cards, places, images, design references, and clean page extraction.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "Find the official docs for the API used in this file, read the page, and check that our calls match it",
+    "Find real pricing-page designs for a SaaS product and restyle our pricing section from the closest one",
+    "Summarize this week's news about our main dependencies, grouped by storyline, with sources"
+  ],
+  "author": {
+    "name": "Octen",
+    "url": "https://octen.ai"
+  },
+  "homepage": "https://docs.octen.ai/integrations/octen-mcp-server",
+  "repository": "https://github.com/Octen-Team/octen-antigravity-plugin",
+  "license": "MIT",
+  "keywords": ["web-search", "search", "news", "company-data", "places", "image-search", "design", "extract", "research", "mcp"]
+}

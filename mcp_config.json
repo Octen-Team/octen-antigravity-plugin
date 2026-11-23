@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "octen": {
+      "url": "https://mcp.octen.ai/mcp",
+      "headers": {
+        "x-api-key": "${OCTEN_API_KEY}"
+      },
+      "variables": [
+        {
+          "name": "OCTEN_API_KEY",
+          "title": "Octen API Key",
+          "description": "Your Octen API key. Create one on the Octen API Platform.",
+          "link": "https://octen.ai/platform/api-keys"
+        }
+      ]
+    }
+  }
+}
