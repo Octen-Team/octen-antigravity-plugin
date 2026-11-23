@@ -82,9 +82,18 @@ chaining them well.
 
 ## When a call fails
 
-- `code=401 msg=Invalid API Key`: the API key is wrong or was never filled in.
-  Stop and ask the user to set their Octen API Key in this plugin's settings;
-  keys are created at https://octen.ai/platform/api-keys. Do not retry until it
-  is set.
+- The Octen tools are not available in this session: ask the user to check that
+  the Octen plugin is enabled and, if Antigravity shows that sign-in is
+  required, to sign in (in the CLI: `/plugin`, expand octen under Installed,
+  choose Sign in).
+- `Access token rejected: <reason>`: report the full reason to the user. Most
+  often the sign-in was revoked or has expired. Ask the user to check their
+  Antigravity version first: CLI 1.5.8 or App 2.33.0 or later is needed to
+  refresh the sign-in, so update an older version. Then ask them to sign in
+  again.
+- `code=401 msg=Invalid API Key`: the API key chosen at sign-in was rejected,
+  for example because it was deleted. Stop and ask the user to sign out of the
+  Octen server, sign in again and choose an active key. Do not retry until they
+  have.
 - Any other error: report the message as returned, including its `request_id`,
   and continue with what the other results support.

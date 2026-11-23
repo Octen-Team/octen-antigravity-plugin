@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "octen",
   "displayName": "Octen",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Live web search for agents: web and news search, company and people cards, places, images, design references, and clean page extraction.",
   "logo": "assets/logo.png",
   "suggestedPrompts": [
